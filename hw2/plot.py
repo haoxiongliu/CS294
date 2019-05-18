@@ -48,6 +48,7 @@ the --legend flag and then provide a title for each logdir.
 
 """
 
+
 def plot_data(data, value="AverageReturn"):
     if isinstance(data, list):
         data = pd.concat(data, ignore_index=True)
@@ -115,6 +116,7 @@ def main():
         values = [args.value]
     for value in values:
         plot_data(data, value=value)
+
 
 if __name__ == "__main__":
     main()
